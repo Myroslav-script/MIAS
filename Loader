@@ -1,0 +1,117 @@
+-- 
+local G2L = {};
+
+-- StarterGui.Loader
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["Name"] = [[Loader]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+
+-- StarterGui.Loader.Frame
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Size"] = UDim2.new(0, 238, 0, 157);
+G2L["2"]["Position"] = UDim2.new(0.39777, 0, 0.36426, 0);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+
+
+-- StarterGui.Loader.Frame.ejoy
+G2L["3"] = Instance.new("TextLabel", G2L["2"]);
+G2L["3"]["TextWrapped"] = true;
+G2L["3"]["BorderSizePixel"] = 0;
+G2L["3"]["TextSize"] = 14;
+G2L["3"]["TextScaled"] = true;
+G2L["3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3"]["BackgroundTransparency"] = 1;
+G2L["3"]["Size"] = UDim2.new(0, 238, 0, 49);
+G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3"]["Text"] = [[Enjoy your keyless adventure!]];
+G2L["3"]["Name"] = [[ejoy]];
+
+
+-- StarterGui.Loader.Frame.ejoy.UICorner
+G2L["4"] = Instance.new("UICorner", G2L["3"]);
+
+
+
+-- StarterGui.Loader.Frame.UICorner
+G2L["5"] = Instance.new("UICorner", G2L["2"]);
+
+
+
+-- StarterGui.Loader.Frame.UIStroke
+G2L["6"] = Instance.new("UIStroke", G2L["2"]);
+G2L["6"]["Transparency"] = 0.56;
+G2L["6"]["Thickness"] = 6.9;
+
+
+-- StarterGui.Loader.Frame.TextLabel
+G2L["7"] = Instance.new("TextLabel", G2L["2"]);
+G2L["7"]["TextWrapped"] = true;
+G2L["7"]["BorderSizePixel"] = 0;
+G2L["7"]["TextSize"] = 14;
+G2L["7"]["TextScaled"] = true;
+G2L["7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7"]["BackgroundTransparency"] = 1;
+G2L["7"]["Size"] = UDim2.new(0, 200, 0, 65);
+G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7"]["Position"] = UDim2.new(0.07983, 0, 0.52866, 0);
+
+
+-- StarterGui.Loader.Frame.TextLabel.LocalScript
+G2L["8"] = Instance.new("LocalScript", G2L["7"]);
+
+
+
+-- StarterGui.Loader.Frame.ImageLabel
+G2L["9"] = Instance.new("ImageLabel", G2L["2"]);
+G2L["9"]["BorderSizePixel"] = 0;
+G2L["9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9"]["Image"] = [[http://www.roblox.com/asset/?id=8932511161]];
+G2L["9"]["Size"] = UDim2.new(0, 34, 0, 34);
+G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9"]["BackgroundTransparency"] = 1;
+G2L["9"]["Position"] = UDim2.new(0.42857, 0, 0.3121, 0);
+
+
+-- StarterGui.Loader.Frame.ImageLabel.LocalScript
+G2L["a"] = Instance.new("LocalScript", G2L["9"]);
+
+
+
+-- StarterGui.Loader.Frame.LocalScript
+G2L["b"] = Instance.new("LocalScript", G2L["2"]);
+
+
+
+-- StarterGui.Loader.Frame.TextLabel.LocalScript
+local function C_8()
+local script = G2L["8"];
+	local gameName = game.Name
+	script.Parent.Text = ("Game Detected: ".. gameName)
+end;
+task.spawn(C_8);
+-- StarterGui.Loader.Frame.ImageLabel.LocalScript
+local function C_a()
+local script = G2L["a"];
+	while task.wait() do
+		script.Parent.Rotation += 5
+	end
+end;
+task.spawn(C_a);
+-- StarterGui.Loader.Frame.LocalScript
+local function C_b()
+local script = G2L["b"];
+	wait(6)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Myroslav-script/MIAS/refs/heads/main/Main%20Script"))()
+	wait(1)
+	script.Parent.Parent:Destroy()
+end;
+task.spawn(C_b);
+
+return G2L["1"], require;
