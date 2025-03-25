@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Myroslav-script/MIAS/refs/heads/main/Loader"))()
