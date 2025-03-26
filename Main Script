@@ -1,4 +1,4 @@
--- Instances: 40 | Scripts: 7 | Modules: 0 | Tags: 0
+-- Instances: 71 | Scripts: 13 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.ScreenGui
@@ -352,8 +352,274 @@ G2L["27"]["Name"] = [[FE]];
 G2L["27"]["BackgroundTransparency"] = 1;
 
 
+-- StarterGui.ScreenGui.Frame.Main.FE.TextButton
+G2L["28"] = Instance.new("TextButton", G2L["27"]);
+G2L["28"]["TextWrapped"] = true;
+G2L["28"]["BorderSizePixel"] = 0;
+G2L["28"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["28"]["TextSize"] = 14;
+G2L["28"]["TextScaled"] = true;
+G2L["28"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["28"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["28"]["Size"] = UDim2.new(0, 150, 0, 35);
+G2L["28"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["28"]["Text"] = [[]];
+
+
+-- StarterGui.ScreenGui.Frame.Main.FE.TextButton.LocalScript
+G2L["29"] = Instance.new("LocalScript", G2L["28"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.Main.FE.TextButton.UICorner
+G2L["2a"] = Instance.new("UICorner", G2L["28"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.Main.FE.TextButton.UIGradient
+G2L["2b"] = Instance.new("UIGradient", G2L["28"]);
+G2L["2b"]["Rotation"] = 100;
+G2L["2b"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(0, 0, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 0, 0))};
+
+
+-- StarterGui.ScreenGui.Frame.Main.FE.TextButton.TextLabel
+G2L["2c"] = Instance.new("TextLabel", G2L["28"]);
+G2L["2c"]["TextWrapped"] = true;
+G2L["2c"]["Interactable"] = false;
+G2L["2c"]["TextStrokeTransparency"] = 0;
+G2L["2c"]["BorderSizePixel"] = 0;
+G2L["2c"]["TextSize"] = 14;
+G2L["2c"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2c"]["TextScaled"] = true;
+G2L["2c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2c"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2c"]["BackgroundTransparency"] = 1;
+G2L["2c"]["Size"] = UDim2.new(0, 150, 0, 35);
+G2L["2c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2c"]["Text"] = [[Fe vr]];
+
+
+-- StarterGui.ScreenGui.Frame.Main.Welcome
+G2L["2d"] = Instance.new("Frame", G2L["1e"]);
+G2L["2d"]["BorderSizePixel"] = 0;
+G2L["2d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2d"]["Size"] = UDim2.new(0, 368, 0, 238);
+G2L["2d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2d"]["Name"] = [[Welcome]];
+G2L["2d"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.ScreenGui.Frame.Main.Welcome.TextLabel1
+G2L["2e"] = Instance.new("TextLabel", G2L["2d"]);
+G2L["2e"]["TextWrapped"] = true;
+G2L["2e"]["BorderSizePixel"] = 0;
+G2L["2e"]["TextSize"] = 14;
+G2L["2e"]["TextTransparency"] = 1;
+G2L["2e"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2e"]["TextScaled"] = true;
+G2L["2e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e"]["BackgroundTransparency"] = 1;
+G2L["2e"]["RichText"] = true;
+G2L["2e"]["Size"] = UDim2.new(0, 367, 0, 160);
+G2L["2e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e"]["Text"] = [[Welcome to the right hands of MIAS hub we try to offer the best experience to you by serving you as a king]];
+G2L["2e"]["Name"] = [[TextLabel1]];
+G2L["2e"]["Position"] = UDim2.new(0, 0, 0.29832, 0);
+
+
+-- StarterGui.ScreenGui.Frame.Main.Welcome.TextLabel1.LocalScript
+G2L["2f"] = Instance.new("LocalScript", G2L["2e"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.Main.Welcome.TextLabel1.UIGradient
+G2L["30"] = Instance.new("UIGradient", G2L["2e"]);
+G2L["30"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(60, 60, 60)),ColorSequenceKeypoint.new(0.500, Color3.fromRGB(37, 0, 67)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(48, 48, 48))};
+
+
+-- StarterGui.ScreenGui.Frame.Main.Welcome.TextLabel2
+G2L["31"] = Instance.new("TextLabel", G2L["2d"]);
+G2L["31"]["BorderSizePixel"] = 0;
+G2L["31"]["TextSize"] = 14;
+G2L["31"]["TextTransparency"] = 1;
+G2L["31"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["31"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["31"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["31"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["31"]["BackgroundTransparency"] = 1;
+G2L["31"]["RichText"] = true;
+G2L["31"]["Size"] = UDim2.new(0, 368, 0, 18);
+G2L["31"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["31"]["Name"] = [[TextLabel2]];
+G2L["31"]["Position"] = UDim2.new(0, 0, 0.21489, 0);
+
+
+-- StarterGui.ScreenGui.Frame.Main.Welcome.TextLabel2.LocalScript
+G2L["32"] = Instance.new("LocalScript", G2L["31"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.Main.Welcome.TextLabel2.UIGradient
+G2L["33"] = Instance.new("UIGradient", G2L["31"]);
+G2L["33"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(60, 60, 60)),ColorSequenceKeypoint.new(0.500, Color3.fromRGB(37, 0, 67)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(48, 48, 48))};
+
+
+-- StarterGui.ScreenGui.Frame.Main.Welcome.TextLabel3
+G2L["34"] = Instance.new("TextLabel", G2L["2d"]);
+G2L["34"]["BorderSizePixel"] = 0;
+G2L["34"]["TextSize"] = 14;
+G2L["34"]["TextTransparency"] = 1;
+G2L["34"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["34"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["34"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["34"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["34"]["BackgroundTransparency"] = 1;
+G2L["34"]["RichText"] = true;
+G2L["34"]["Size"] = UDim2.new(0, 239, 0, 49);
+G2L["34"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["34"]["Name"] = [[TextLabel3]];
+G2L["34"]["Position"] = UDim2.new(0.34783, 0, 0.00481, 0);
+
+
+-- StarterGui.ScreenGui.Frame.Main.Welcome.TextLabel3.LocalScript
+G2L["35"] = Instance.new("LocalScript", G2L["34"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.Main.Welcome.TextLabel3.UIGradient
+G2L["36"] = Instance.new("UIGradient", G2L["34"]);
+G2L["36"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(60, 60, 60)),ColorSequenceKeypoint.new(0.500, Color3.fromRGB(37, 0, 67)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(48, 48, 48))};
+
+
 -- StarterGui.ScreenGui.Frame.LocalScript
-G2L["28"] = Instance.new("LocalScript", G2L["2"]);
+G2L["37"] = Instance.new("LocalScript", G2L["2"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.Warning
+G2L["38"] = Instance.new("Frame", G2L["2"]);
+G2L["38"]["Visible"] = false;
+G2L["38"]["ZIndex"] = 4;
+G2L["38"]["BorderSizePixel"] = 0;
+G2L["38"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["38"]["Size"] = UDim2.new(0, 467, 0, 278);
+G2L["38"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["38"]["Name"] = [[Warning]];
+G2L["38"]["BackgroundTransparency"] = 0.5;
+
+
+-- StarterGui.ScreenGui.Frame.Warning.Warning
+G2L["39"] = Instance.new("Frame", G2L["38"]);
+G2L["39"]["BorderSizePixel"] = 0;
+G2L["39"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["39"]["Size"] = UDim2.new(0, 223, 0, 136);
+G2L["39"]["Position"] = UDim2.new(0.26068, 0, 0.20863, 0);
+G2L["39"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["39"]["Name"] = [[Warning]];
+
+
+-- StarterGui.ScreenGui.Frame.Warning.Warning.TextLabel
+G2L["3a"] = Instance.new("TextLabel", G2L["39"]);
+G2L["3a"]["TextWrapped"] = true;
+G2L["3a"]["BorderSizePixel"] = 0;
+G2L["3a"]["TextSize"] = 14;
+G2L["3a"]["TextScaled"] = true;
+G2L["3a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3a"]["Size"] = UDim2.new(0, 223, 0, 93);
+G2L["3a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3a"]["Text"] = [[You are required to have Blonde Spiked Hair and International Fedora - France]];
+G2L["3a"]["Position"] = UDim2.new(0, 0, 0, 0);
+
+
+-- StarterGui.ScreenGui.Frame.Warning.Warning.TextLabel.UICorner
+G2L["3b"] = Instance.new("UICorner", G2L["3a"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.Warning.Warning.TextLabel.UIGradient
+G2L["3c"] = Instance.new("UIGradient", G2L["3a"]);
+G2L["3c"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(105, 105, 105)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(150, 150, 150))};
+
+
+-- StarterGui.ScreenGui.Frame.Warning.Warning.TextButton
+G2L["3d"] = Instance.new("TextButton", G2L["39"]);
+G2L["3d"]["TextWrapped"] = true;
+G2L["3d"]["BorderSizePixel"] = 0;
+G2L["3d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3d"]["TextSize"] = 14;
+G2L["3d"]["TextScaled"] = true;
+G2L["3d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3d"]["Size"] = UDim2.new(0, 111, 0, 32);
+G2L["3d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3d"]["Text"] = [[I have the items on proceed]];
+G2L["3d"]["Position"] = UDim2.new(0, 0, 0.75841, 0);
+
+
+-- StarterGui.ScreenGui.Frame.Warning.Warning.TextButton.UICorner
+G2L["3e"] = Instance.new("UICorner", G2L["3d"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.Warning.Warning.TextButton.UIGradient
+G2L["3f"] = Instance.new("UIGradient", G2L["3d"]);
+G2L["3f"]["Rotation"] = 90;
+G2L["3f"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(0, 125, 11)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(23, 169, 0))};
+
+
+-- StarterGui.ScreenGui.Frame.Warning.Warning.TextButton.LocalScript
+G2L["40"] = Instance.new("LocalScript", G2L["3d"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.Warning.Warning.UICorner
+G2L["41"] = Instance.new("UICorner", G2L["39"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.Warning.Warning.TextButton
+G2L["42"] = Instance.new("TextButton", G2L["39"]);
+G2L["42"]["TextWrapped"] = true;
+G2L["42"]["BorderSizePixel"] = 0;
+G2L["42"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["42"]["TextSize"] = 14;
+G2L["42"]["TextScaled"] = true;
+G2L["42"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["42"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["42"]["Size"] = UDim2.new(0, 111, 0, 32);
+G2L["42"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["42"]["Text"] = [[I dont have the items on, take me back to the menu]];
+G2L["42"]["Position"] = UDim2.new(0.49776, 0, 0.75841, 0);
+
+
+-- StarterGui.ScreenGui.Frame.Warning.Warning.TextButton.UICorner
+G2L["43"] = Instance.new("UICorner", G2L["42"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.Warning.Warning.TextButton.UIGradient
+G2L["44"] = Instance.new("UIGradient", G2L["42"]);
+G2L["44"]["Rotation"] = 90;
+G2L["44"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(125, 0, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(169, 0, 0))};
+
+
+-- StarterGui.ScreenGui.Frame.Warning.Warning.TextButton.LocalScript
+G2L["45"] = Instance.new("LocalScript", G2L["42"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.Warning.Warning.UIGradient
+G2L["46"] = Instance.new("UIGradient", G2L["39"]);
+G2L["46"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(0, 0, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(58, 0, 99))};
+
+
+-- StarterGui.ScreenGui.Frame.Warning.UICorner
+G2L["47"] = Instance.new("UICorner", G2L["38"]);
 
 
 
@@ -463,6 +729,7 @@ local script = G2L["18"];
 	script.Parent.Activated:Connect(function()
 		script.Parent.Parent.Parent.Main.PLR.Visible = true
 		script.Parent.Parent.Parent.Main.FE.Visible = false
+		script.Parent.Parent.Parent.Main.Welcome.Visible = false
 	end)
 end;
 task.spawn(C_18);
@@ -472,29 +739,58 @@ local script = G2L["1d"];
 	script.Parent.Activated:Connect(function()
 		script.Parent.Parent.Parent.Main.PLR.Visible = false
 		script.Parent.Parent.Parent.Main.FE.Visible = true
+		script.Parent.Parent.Parent.Main.Welcome.Visible = false
 	end)
 end;
 task.spawn(C_1d);
 -- StarterGui.ScreenGui.Frame.Main.PLR.TextButton.LocalScript
 local function C_23()
 local script = G2L["23"];
-	local PS = game.Players.LocalPlayer.Character.Humanoid.PlatformStand
+	local H = game.Players.LocalPlayer.Character.Humanoid
 	local activated = false
 	script.Parent.Activated:Connect(function()
-		print("activated")
 		if activated == false then
-			PS = true
+			H.PlatformStand = true
 			activated = true
 		elseif activated == true then
-			PS = false
+			H.PlatformStand = false
 			activated = false
 		end
 	end)
 end;
 task.spawn(C_23);
+-- StarterGui.ScreenGui.Frame.Main.FE.TextButton.LocalScript
+local function C_29()
+local script = G2L["29"];
+	script.Parent.Activated:Connect(function()
+		script.Parent.Parent.Parent.Parent.Warning.Visible = true
+	end)
+end;
+task.spawn(C_29);
+-- StarterGui.ScreenGui.Frame.Main.Welcome.TextLabel1.LocalScript
+local function C_2f()
+local script = G2L["2f"];
+	local name = game.Players.LocalPlayer.Name
+	script.Parent.Text = ("Welcome to the right hands of MIAS hub we try to offer the best experience to you by serving you as a king, ".. name .. ".")
+end;
+task.spawn(C_2f);
+-- StarterGui.ScreenGui.Frame.Main.Welcome.TextLabel2.LocalScript
+local function C_32()
+local script = G2L["32"];
+	local ExploitName if syn then ExploitName = "Synapse X"; elseif KRNL_LOADED then ExploitName = "KRNL"; elseif getexecutorname then ExploitName = "Script-Ware"; elseif IsElectron then ExploitName = "Electron"; elseif FLUXUS_LOADED then ExploitName = "Fluxus"; elseif hookfunction_raw and hmjdfk then ExploitName = "Fluxus (MacOS)"; elseif shadow_env then ExploitName = "Shadow"; elseif is_sirhurt_closure then ExploitName = "Sirhurt"; elseif WRDAPI then ExploitName = "WeAreDes (WRD)"; elseif SENTINEL_LOADED then ExploitName = "SENTINEL"; elseif PROTOSMASHER_LOADED then ExploitName = "ProtoSmasher"; elseif isvm then ExploitName = "Proxo"; elseif IS_VIVA_LOADED then ExploitName = "VIVA"; elseif IS_COCO_LOADED then ExploitName = "Coco"; elseif jit then ExploitName = "EasyExploits"; elseif CalamariLuaEnv then ExploitName = "Calamari"; elseif unit then ExploitName = "Unit"; else ExploitName = "Unknown"; end;
+	script.Parent.Text = ("Exploit: ".. ExploitName)
+end;
+task.spawn(C_32);
+-- StarterGui.ScreenGui.Frame.Main.Welcome.TextLabel3.LocalScript
+local function C_35()
+local script = G2L["35"];
+	local name = game.Players.LocalPlayer.Name
+	script.Parent.Text = ("Welcome ".. name)
+end;
+task.spawn(C_35);
 -- StarterGui.ScreenGui.Frame.LocalScript
-local function C_28()
-local script = G2L["28"];
+local function C_37()
+local script = G2L["37"];
 	script.Parent.Size = UDim2.new(0, 0, 0, 0)
 	script.Parent.UIStroke.Enabled = false
 	wait(0.5)
@@ -515,6 +811,12 @@ local script = G2L["28"];
 	local openTXT = TS:Create(script.Parent.TextLabel, Info, {TextTransparency = 0})
 	local openWelc = TS:Create(script.Parent.welcome, Info, {Transparency = 0})
 	local openWelcTXT = TS:Create(script.Parent.welcome, Info, {TextStrokeTransparency = 0})
+	local openWelcoTXT1 = TS:Create(script.Parent.Main.Welcome.TextLabel1, Info, {TextStrokeTransparency = 0})
+	local openWelco1 = TS:Create(script.Parent.Main.Welcome.TextLabel1, Info, {Transparency = 0})
+	local openWelcoTXT2 = TS:Create(script.Parent.Main.Welcome.TextLabel2, Info, {TextStrokeTransparency = 0})
+	local openWelco2 = TS:Create(script.Parent.Main.Welcome.TextLabel2, Info, {Transparency = 0})
+	local openWelcoTXT3 = TS:Create(script.Parent.Main.Welcome.TextLabel3, Info, {TextStrokeTransparency = 0})
+	local openWelco3 = TS:Create(script.Parent.Main.Welcome.TextLabel3, Info, {Transparency = 0})
 	open:Play()
 	wait(0.5)
 	openFrame:Play()
@@ -532,7 +834,48 @@ local script = G2L["28"];
 	openWelc:Play()
 	openWelcTXT:Play()
 	script.Parent.UIStroke.Enabled = true
+	openWelco1:Play()
+	openWelcoTXT1:Play()
+	openWelco2:Play()
+	openWelcoTXT2:Play()
+	openWelco3:Play()
+	openWelcoTXT3:Play()
 end;
-task.spawn(C_28);
+task.spawn(C_37);
+-- StarterGui.ScreenGui.Frame.Warning.Warning.TextButton.LocalScript
+local function C_40()
+local script = G2L["40"];
+	script.Parent.Activated:Connect(function()
+		script.Parent.Parent.Parent.Visible = false
+		local plr = game.Players.LocalPlayer
+		local head = plr.Character:WaitForChild("Head")
+		local accQ = plr.Character:WaitForChild("MessyHair")
+		local accW = plr.Character:WaitForChild("InternationalFedora")
+		local posQ = accQ.Handle.Position
+		local posW = accW.Handle.Position
+		local oreQ = accQ.Handle.Orientation
+		local oreW = accW.Handle.Orientation
+		plr.Character:WaitForChild("Humanoid").Health = 0
+		plr.Character.Humanoid.WalkSpeed = 1
+		while task.wait() do
+			head.Position = posQ
+			accQ.Handle.Position = posQ
+			accW.Handle.Position = posW
+			accQ.Handle.Orientation = oreQ
+			accW.Handle.Orientation = oreW
+			posQ += plr.Character:WaitForChild("Humanoid").MoveDirection / 10
+			posW += plr.Character:WaitForChild("Humanoid").MoveDirection / 10
+		end
+	end)
+end;
+task.spawn(C_40);
+-- StarterGui.ScreenGui.Frame.Warning.Warning.TextButton.LocalScript
+local function C_45()
+local script = G2L["45"];
+	script.Parent.Activated:Connect(function()
+		script.Parent.Parent.Parent.Visible = false
+	end)
+end;
+task.spawn(C_45);
 
 return G2L["1"], require;
