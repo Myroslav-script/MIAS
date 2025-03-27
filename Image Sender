@@ -1,4 +1,4 @@
--- Instances: 57 | Scripts: 5 | Modules: 0 | Tags: 0
+-- Instances: 59 | Scripts: 6 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.Message Chatter
@@ -774,6 +774,26 @@ G2L["39"] = Instance.new("LocalScript", G2L["2"]);
 G2L["39"]["Name"] = [[ChatRow4]];
 
 
+-- StarterGui.Message Chatter.Frame.TextButton
+G2L["3a"] = Instance.new("TextButton", G2L["2"]);
+G2L["3a"]["TextWrapped"] = true;
+G2L["3a"]["BorderSizePixel"] = 0;
+G2L["3a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3a"]["TextSize"] = 14;
+G2L["3a"]["TextScaled"] = true;
+G2L["3a"]["BackgroundColor3"] = Color3.fromRGB(160, 0, 0);
+G2L["3a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3a"]["Size"] = UDim2.new(0, 34, 0, 36);
+G2L["3a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3a"]["Text"] = [[X]];
+G2L["3a"]["Position"] = UDim2.new(0, 0, 0.8796, 0);
+
+
+-- StarterGui.Message Chatter.Frame.TextButton.LocalScript
+G2L["3b"] = Instance.new("LocalScript", G2L["3a"]);
+
+
+
 -- StarterGui.Message Chatter.Frame.LocalScript
 local function C_6()
 local script = G2L["6"];
@@ -1404,5 +1424,13 @@ local script = G2L["39"];
 	end)
 end;
 task.spawn(C_39);
+-- StarterGui.Message Chatter.Frame.TextButton.LocalScript
+local function C_3b()
+local script = G2L["3b"];
+	script.Parent.Activated:Connect(function()
+		script.Parent.Parent.Parent:Destroy()
+	end)
+end;
+task.spawn(C_3b);
 
 return G2L["1"], require;
