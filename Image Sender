@@ -1,0 +1,1408 @@
+-- Instances: 57 | Scripts: 5 | Modules: 0 | Tags: 0
+local G2L = {};
+
+-- StarterGui.Message Chatter
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["Name"] = [[Message Chatter]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+G2L["1"]["ResetOnSpawn"] = false;
+
+
+-- StarterGui.Message Chatter.Frame
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(34, 34, 34);
+G2L["2"]["Size"] = UDim2.new(0, 297, 0, 299);
+G2L["2"]["Position"] = UDim2.new(0.45353, 0, 0.24399, 0);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+
+
+-- StarterGui.Message Chatter.Frame.UIStroke
+G2L["3"] = Instance.new("UIStroke", G2L["2"]);
+G2L["3"]["Transparency"] = 0.56;
+G2L["3"]["Thickness"] = 6.9;
+
+
+-- StarterGui.Message Chatter.Frame.TextLabel
+G2L["4"] = Instance.new("TextLabel", G2L["2"]);
+G2L["4"]["TextWrapped"] = true;
+G2L["4"]["BorderSizePixel"] = 0;
+G2L["4"]["TextSize"] = 14;
+G2L["4"]["TextScaled"] = true;
+G2L["4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4"]["BackgroundTransparency"] = 1;
+G2L["4"]["Size"] = UDim2.new(0, 100, 0, 23);
+G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["Text"] = [[Message Chatter]];
+
+
+-- StarterGui.Message Chatter.Frame.TextLabel
+G2L["5"] = Instance.new("TextLabel", G2L["2"]);
+G2L["5"]["BorderSizePixel"] = 0;
+G2L["5"]["TextSize"] = 14;
+G2L["5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5"]["BackgroundTransparency"] = 1;
+G2L["5"]["Size"] = UDim2.new(0, 177, 0, 13);
+G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5"]["Text"] = [[ - Made By The People Of MIAS Hub]];
+G2L["5"]["Position"] = UDim2.new(0.3367, 0, 0.01672, 0);
+
+
+-- StarterGui.Message Chatter.Frame.LocalScript
+G2L["6"] = Instance.new("LocalScript", G2L["2"]);
+
+
+
+-- StarterGui.Message Chatter.Frame.Frame
+G2L["7"] = Instance.new("Frame", G2L["2"]);
+G2L["7"]["BorderSizePixel"] = 0;
+G2L["7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7"]["Size"] = UDim2.new(0, 297, 0, 4);
+G2L["7"]["Position"] = UDim2.new(0, 0, 0.08361, 0);
+G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+
+
+-- StarterGui.Message Chatter.Frame.Frame.UIGradient
+G2L["8"] = Instance.new("UIGradient", G2L["7"]);
+G2L["8"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(34, 34, 34)),ColorSequenceKeypoint.new(0.019, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.272, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(34, 34, 34))};
+
+
+-- StarterGui.Message Chatter.Frame.MessageFrame
+G2L["9"] = Instance.new("Frame", G2L["2"]);
+G2L["9"]["BorderSizePixel"] = 0;
+G2L["9"]["BackgroundColor3"] = Color3.fromRGB(112, 112, 112);
+G2L["9"]["Size"] = UDim2.new(0, 262, 0, 205);
+G2L["9"]["Position"] = UDim2.new(0.05051, 0, 0.13378, 0);
+G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9"]["Name"] = [[MessageFrame]];
+
+
+-- StarterGui.Message Chatter.Frame.MessageFrame.M1
+G2L["a"] = Instance.new("TextButton", G2L["9"]);
+G2L["a"]["TextWrapped"] = true;
+G2L["a"]["BorderSizePixel"] = 0;
+G2L["a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a"]["TextSize"] = 14;
+G2L["a"]["TextScaled"] = true;
+G2L["a"]["BackgroundColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["a"]["Size"] = UDim2.new(0, 25, 0, 29);
+G2L["a"]["Name"] = [[M1]];
+G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a"]["Text"] = [[⚪]];
+
+
+-- StarterGui.Message Chatter.Frame.MessageFrame.M2
+G2L["b"] = Instance.new("TextButton", G2L["9"]);
+G2L["b"]["TextWrapped"] = true;
+G2L["b"]["BorderSizePixel"] = 0;
+G2L["b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["TextSize"] = 14;
+G2L["b"]["TextScaled"] = true;
+G2L["b"]["BackgroundColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["b"]["Size"] = UDim2.new(0, 25, 0, 29);
+G2L["b"]["Name"] = [[M2]];
+G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["Text"] = [[⚪]];
+G2L["b"]["Position"] = UDim2.new(0.09924, 0, 0, 0);
+
+
+-- StarterGui.Message Chatter.Frame.MessageFrame.M3
+G2L["c"] = Instance.new("TextButton", G2L["9"]);
+G2L["c"]["TextWrapped"] = true;
+G2L["c"]["BorderSizePixel"] = 0;
+G2L["c"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c"]["TextSize"] = 14;
+G2L["c"]["TextScaled"] = true;
+G2L["c"]["BackgroundColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["c"]["Size"] = UDim2.new(0, 25, 0, 29);
+G2L["c"]["Name"] = [[M3]];
+G2L["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c"]["Text"] = [[⚪]];
+G2L["c"]["Position"] = UDim2.new(0.198, 0, 0, 0);
+
+
+-- StarterGui.Message Chatter.Frame.MessageFrame.M4
+G2L["d"] = Instance.new("TextButton", G2L["9"]);
+G2L["d"]["TextWrapped"] = true;
+G2L["d"]["BorderSizePixel"] = 0;
+G2L["d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d"]["TextSize"] = 14;
+G2L["d"]["TextScaled"] = true;
+G2L["d"]["BackgroundColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["d"]["Size"] = UDim2.new(0, 25, 0, 29);
+G2L["d"]["Name"] = [[M4]];
+G2L["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d"]["Text"] = [[⚪]];
+G2L["d"]["Position"] = UDim2.new(0.297, 0, 0, 0);
+
+
+-- StarterGui.Message Chatter.Frame.MessageFrame.M5
+G2L["e"] = Instance.new("TextButton", G2L["9"]);
+G2L["e"]["TextWrapped"] = true;
+G2L["e"]["BorderSizePixel"] = 0;
+G2L["e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e"]["TextSize"] = 14;
+G2L["e"]["TextScaled"] = true;
+G2L["e"]["BackgroundColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["e"]["Size"] = UDim2.new(0, 25, 0, 29);
+G2L["e"]["Name"] = [[M5]];
+G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e"]["Text"] = [[⚪]];
+G2L["e"]["Position"] = UDim2.new(0.396, 0, 0, 0);
+
+
+-- StarterGui.Message Chatter.Frame.MessageFrame.M6
+G2L["f"] = Instance.new("TextButton", G2L["9"]);
+G2L["f"]["TextWrapped"] = true;
+G2L["f"]["BorderSizePixel"] = 0;
+G2L["f"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f"]["TextSize"] = 14;
+G2L["f"]["TextScaled"] = true;
+G2L["f"]["BackgroundColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["f"]["Size"] = UDim2.new(0, 25, 0, 29);
+G2L["f"]["Name"] = [[M6]];
+G2L["f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f"]["Text"] = [[⚪]];
+G2L["f"]["Position"] = UDim2.new(0.495, 0, 0, 0);
+
+
+-- StarterGui.Message Chatter.Frame.MessageFrame.M7
+G2L["10"] = Instance.new("TextButton", G2L["9"]);
+G2L["10"]["TextWrapped"] = true;
+G2L["10"]["BorderSizePixel"] = 0;
+G2L["10"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10"]["TextSize"] = 14;
+G2L["10"]["TextScaled"] = true;
+G2L["10"]["BackgroundColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["10"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["10"]["Size"] = UDim2.new(0, 25, 0, 29);
+G2L["10"]["Name"] = [[M7]];
+G2L["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10"]["Text"] = [[⚪]];
+G2L["10"]["Position"] = UDim2.new(0.594, 0, 0, 0);
+
+
+-- StarterGui.Message Chatter.Frame.MessageFrame.M8
+G2L["11"] = Instance.new("TextButton", G2L["9"]);
+G2L["11"]["TextWrapped"] = true;
+G2L["11"]["BorderSizePixel"] = 0;
+G2L["11"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11"]["TextSize"] = 14;
+G2L["11"]["TextScaled"] = true;
+G2L["11"]["BackgroundColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["11"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["11"]["Size"] = UDim2.new(0, 25, 0, 29);
+G2L["11"]["Name"] = [[M8]];
+G2L["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11"]["Text"] = [[⚪]];
+G2L["11"]["Position"] = UDim2.new(0.693, 0, 0, 0);
+
+
+-- StarterGui.Message Chatter.Frame.MessageFrame.M9
+G2L["12"] = Instance.new("TextButton", G2L["9"]);
+G2L["12"]["TextWrapped"] = true;
+G2L["12"]["BorderSizePixel"] = 0;
+G2L["12"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12"]["TextSize"] = 14;
+G2L["12"]["TextScaled"] = true;
+G2L["12"]["BackgroundColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["12"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["12"]["Size"] = UDim2.new(0, 25, 0, 29);
+G2L["12"]["Name"] = [[M9]];
+G2L["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12"]["Text"] = [[⚪]];
+G2L["12"]["Position"] = UDim2.new(0.792, 0, 0, 0);
+
+
+-- StarterGui.Message Chatter.Frame.MessageFrame.M10
+G2L["13"] = Instance.new("TextButton", G2L["9"]);
+G2L["13"]["TextWrapped"] = true;
+G2L["13"]["BorderSizePixel"] = 0;
+G2L["13"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["13"]["TextSize"] = 14;
+G2L["13"]["TextScaled"] = true;
+G2L["13"]["BackgroundColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["13"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["13"]["Size"] = UDim2.new(0, 25, 0, 29);
+G2L["13"]["Name"] = [[M10]];
+G2L["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["13"]["Text"] = [[⚪]];
+G2L["13"]["Position"] = UDim2.new(0.892, 0, 0, 0);
+
+
+-- StarterGui.Message Chatter.Frame.MessageFrame.Frame
+G2L["14"] = Instance.new("Frame", G2L["9"]);
+G2L["14"]["BorderSizePixel"] = 0;
+G2L["14"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+G2L["14"]["Size"] = UDim2.new(0, 3, 0, 205);
+G2L["14"]["Position"] = UDim2.new(0.98742, 0, 0, 0);
+G2L["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+
+
+-- StarterGui.Message Chatter.Frame.MessageFrame.Row2M1
+G2L["15"] = Instance.new("TextButton", G2L["9"]);
+G2L["15"]["TextWrapped"] = true;
+G2L["15"]["BorderSizePixel"] = 0;
+G2L["15"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["15"]["TextSize"] = 14;
+G2L["15"]["TextScaled"] = true;
+G2L["15"]["BackgroundColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["15"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["15"]["Size"] = UDim2.new(0, 25, 0, 29);
+G2L["15"]["Name"] = [[Row2M1]];
+G2L["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["15"]["Text"] = [[⚪]];
+G2L["15"]["Position"] = UDim2.new(0, 0, 0.14146, 0);
+
+
+-- StarterGui.Message Chatter.Frame.MessageFrame.Row2M2
+G2L["16"] = Instance.new("TextButton", G2L["9"]);
+G2L["16"]["TextWrapped"] = true;
+G2L["16"]["BorderSizePixel"] = 0;
+G2L["16"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16"]["TextSize"] = 14;
+G2L["16"]["TextScaled"] = true;
+G2L["16"]["BackgroundColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["16"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["16"]["Size"] = UDim2.new(0, 25, 0, 29);
+G2L["16"]["Name"] = [[Row2M2]];
+G2L["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16"]["Text"] = [[⚪]];
+G2L["16"]["Position"] = UDim2.new(0.09924, 0, 0.14146, 0);
+
+
+-- StarterGui.Message Chatter.Frame.MessageFrame.Row2M3
+G2L["17"] = Instance.new("TextButton", G2L["9"]);
+G2L["17"]["TextWrapped"] = true;
+G2L["17"]["BorderSizePixel"] = 0;
+G2L["17"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17"]["TextSize"] = 14;
+G2L["17"]["TextScaled"] = true;
+G2L["17"]["BackgroundColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["17"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["17"]["Size"] = UDim2.new(0, 25, 0, 29);
+G2L["17"]["Name"] = [[Row2M3]];
+G2L["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17"]["Text"] = [[⚪]];
+G2L["17"]["Position"] = UDim2.new(0.198, 0, 0.14146, 0);
+
+
+-- StarterGui.Message Chatter.Frame.MessageFrame.Row2M4
+G2L["18"] = Instance.new("TextButton", G2L["9"]);
+G2L["18"]["TextWrapped"] = true;
+G2L["18"]["BorderSizePixel"] = 0;
+G2L["18"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18"]["TextSize"] = 14;
+G2L["18"]["TextScaled"] = true;
+G2L["18"]["BackgroundColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["18"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["18"]["Size"] = UDim2.new(0, 25, 0, 29);
+G2L["18"]["Name"] = [[Row2M4]];
+G2L["18"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18"]["Text"] = [[⚪]];
+G2L["18"]["Position"] = UDim2.new(0.297, 0, 0.14146, 0);
+
+
+-- StarterGui.Message Chatter.Frame.MessageFrame.Row2M5
+G2L["19"] = Instance.new("TextButton", G2L["9"]);
+G2L["19"]["TextWrapped"] = true;
+G2L["19"]["BorderSizePixel"] = 0;
+G2L["19"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19"]["TextSize"] = 14;
+G2L["19"]["TextScaled"] = true;
+G2L["19"]["BackgroundColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["19"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["19"]["Size"] = UDim2.new(0, 25, 0, 29);
+G2L["19"]["Name"] = [[Row2M5]];
+G2L["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19"]["Text"] = [[⚪]];
+G2L["19"]["Position"] = UDim2.new(0.396, 0, 0.14146, 0);
+
+
+-- StarterGui.Message Chatter.Frame.MessageFrame.Row2M6
+G2L["1a"] = Instance.new("TextButton", G2L["9"]);
+G2L["1a"]["TextWrapped"] = true;
+G2L["1a"]["BorderSizePixel"] = 0;
+G2L["1a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a"]["TextSize"] = 14;
+G2L["1a"]["TextScaled"] = true;
+G2L["1a"]["BackgroundColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["1a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1a"]["Size"] = UDim2.new(0, 25, 0, 29);
+G2L["1a"]["Name"] = [[Row2M6]];
+G2L["1a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a"]["Text"] = [[⚪]];
+G2L["1a"]["Position"] = UDim2.new(0.495, 0, 0.14146, 0);
+
+
+-- StarterGui.Message Chatter.Frame.MessageFrame.Row2M7
+G2L["1b"] = Instance.new("TextButton", G2L["9"]);
+G2L["1b"]["TextWrapped"] = true;
+G2L["1b"]["BorderSizePixel"] = 0;
+G2L["1b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b"]["TextSize"] = 14;
+G2L["1b"]["TextScaled"] = true;
+G2L["1b"]["BackgroundColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["1b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1b"]["Size"] = UDim2.new(0, 25, 0, 29);
+G2L["1b"]["Name"] = [[Row2M7]];
+G2L["1b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b"]["Text"] = [[⚪]];
+G2L["1b"]["Position"] = UDim2.new(0.594, 0, 0.14146, 0);
+
+
+-- StarterGui.Message Chatter.Frame.MessageFrame.Row2M8
+G2L["1c"] = Instance.new("TextButton", G2L["9"]);
+G2L["1c"]["TextWrapped"] = true;
+G2L["1c"]["BorderSizePixel"] = 0;
+G2L["1c"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c"]["TextSize"] = 14;
+G2L["1c"]["TextScaled"] = true;
+G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["1c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1c"]["Size"] = UDim2.new(0, 25, 0, 29);
+G2L["1c"]["Name"] = [[Row2M8]];
+G2L["1c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c"]["Text"] = [[⚪]];
+G2L["1c"]["Position"] = UDim2.new(0.693, 0, 0.14146, 0);
+
+
+-- StarterGui.Message Chatter.Frame.MessageFrame.Row2M9
+G2L["1d"] = Instance.new("TextButton", G2L["9"]);
+G2L["1d"]["TextWrapped"] = true;
+G2L["1d"]["BorderSizePixel"] = 0;
+G2L["1d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d"]["TextSize"] = 14;
+G2L["1d"]["TextScaled"] = true;
+G2L["1d"]["BackgroundColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["1d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1d"]["Size"] = UDim2.new(0, 25, 0, 29);
+G2L["1d"]["Name"] = [[Row2M9]];
+G2L["1d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d"]["Text"] = [[⚪]];
+G2L["1d"]["Position"] = UDim2.new(0.792, 0, 0.14146, 0);
+
+
+-- StarterGui.Message Chatter.Frame.MessageFrame.Row2M10
+G2L["1e"] = Instance.new("TextButton", G2L["9"]);
+G2L["1e"]["TextWrapped"] = true;
+G2L["1e"]["BorderSizePixel"] = 0;
+G2L["1e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1e"]["TextSize"] = 14;
+G2L["1e"]["TextScaled"] = true;
+G2L["1e"]["BackgroundColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["1e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1e"]["Size"] = UDim2.new(0, 25, 0, 29);
+G2L["1e"]["Name"] = [[Row2M10]];
+G2L["1e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1e"]["Text"] = [[⚪]];
+G2L["1e"]["Position"] = UDim2.new(0.892, 0, 0.14146, 0);
+
+
+-- StarterGui.Message Chatter.Frame.MessageFrame.Row3M1
+G2L["1f"] = Instance.new("TextButton", G2L["9"]);
+G2L["1f"]["TextWrapped"] = true;
+G2L["1f"]["BorderSizePixel"] = 0;
+G2L["1f"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1f"]["TextSize"] = 14;
+G2L["1f"]["TextScaled"] = true;
+G2L["1f"]["BackgroundColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["1f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1f"]["Size"] = UDim2.new(0, 25, 0, 29);
+G2L["1f"]["Name"] = [[Row3M1]];
+G2L["1f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1f"]["Text"] = [[⚪]];
+G2L["1f"]["Position"] = UDim2.new(0, 0, 0.28293, 0);
+
+
+-- StarterGui.Message Chatter.Frame.MessageFrame.Row3M10
+G2L["20"] = Instance.new("TextButton", G2L["9"]);
+G2L["20"]["TextWrapped"] = true;
+G2L["20"]["BorderSizePixel"] = 0;
+G2L["20"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["20"]["TextSize"] = 14;
+G2L["20"]["TextScaled"] = true;
+G2L["20"]["BackgroundColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["20"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["20"]["Size"] = UDim2.new(0, 25, 0, 29);
+G2L["20"]["Name"] = [[Row3M10]];
+G2L["20"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["20"]["Text"] = [[⚪]];
+G2L["20"]["Position"] = UDim2.new(0.892, 0, 0.28293, 0);
+
+
+-- StarterGui.Message Chatter.Frame.MessageFrame.Row3M2
+G2L["21"] = Instance.new("TextButton", G2L["9"]);
+G2L["21"]["TextWrapped"] = true;
+G2L["21"]["BorderSizePixel"] = 0;
+G2L["21"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["21"]["TextSize"] = 14;
+G2L["21"]["TextScaled"] = true;
+G2L["21"]["BackgroundColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["21"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["21"]["Size"] = UDim2.new(0, 25, 0, 29);
+G2L["21"]["Name"] = [[Row3M2]];
+G2L["21"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["21"]["Text"] = [[⚪]];
+G2L["21"]["Position"] = UDim2.new(0.09924, 0, 0.28293, 0);
+
+
+-- StarterGui.Message Chatter.Frame.MessageFrame.Row3M3
+G2L["22"] = Instance.new("TextButton", G2L["9"]);
+G2L["22"]["TextWrapped"] = true;
+G2L["22"]["BorderSizePixel"] = 0;
+G2L["22"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["22"]["TextSize"] = 14;
+G2L["22"]["TextScaled"] = true;
+G2L["22"]["BackgroundColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["22"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["22"]["Size"] = UDim2.new(0, 25, 0, 29);
+G2L["22"]["Name"] = [[Row3M3]];
+G2L["22"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["22"]["Text"] = [[⚪]];
+G2L["22"]["Position"] = UDim2.new(0.198, 0, 0.28293, 0);
+
+
+-- StarterGui.Message Chatter.Frame.MessageFrame.Row3M4
+G2L["23"] = Instance.new("TextButton", G2L["9"]);
+G2L["23"]["TextWrapped"] = true;
+G2L["23"]["BorderSizePixel"] = 0;
+G2L["23"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["23"]["TextSize"] = 14;
+G2L["23"]["TextScaled"] = true;
+G2L["23"]["BackgroundColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["23"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["23"]["Size"] = UDim2.new(0, 25, 0, 29);
+G2L["23"]["Name"] = [[Row3M4]];
+G2L["23"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["23"]["Text"] = [[⚪]];
+G2L["23"]["Position"] = UDim2.new(0.297, 0, 0.28293, 0);
+
+
+-- StarterGui.Message Chatter.Frame.MessageFrame.Row3M5
+G2L["24"] = Instance.new("TextButton", G2L["9"]);
+G2L["24"]["TextWrapped"] = true;
+G2L["24"]["BorderSizePixel"] = 0;
+G2L["24"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["24"]["TextSize"] = 14;
+G2L["24"]["TextScaled"] = true;
+G2L["24"]["BackgroundColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["24"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["24"]["Size"] = UDim2.new(0, 25, 0, 29);
+G2L["24"]["Name"] = [[Row3M5]];
+G2L["24"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["24"]["Text"] = [[⚪]];
+G2L["24"]["Position"] = UDim2.new(0.396, 0, 0.28293, 0);
+
+
+-- StarterGui.Message Chatter.Frame.MessageFrame.Row3M6
+G2L["25"] = Instance.new("TextButton", G2L["9"]);
+G2L["25"]["TextWrapped"] = true;
+G2L["25"]["BorderSizePixel"] = 0;
+G2L["25"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["25"]["TextSize"] = 14;
+G2L["25"]["TextScaled"] = true;
+G2L["25"]["BackgroundColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["25"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["25"]["Size"] = UDim2.new(0, 25, 0, 29);
+G2L["25"]["Name"] = [[Row3M6]];
+G2L["25"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["25"]["Text"] = [[⚪]];
+G2L["25"]["Position"] = UDim2.new(0.495, 0, 0.28293, 0);
+
+
+-- StarterGui.Message Chatter.Frame.MessageFrame.Row3M7
+G2L["26"] = Instance.new("TextButton", G2L["9"]);
+G2L["26"]["TextWrapped"] = true;
+G2L["26"]["BorderSizePixel"] = 0;
+G2L["26"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["26"]["TextSize"] = 14;
+G2L["26"]["TextScaled"] = true;
+G2L["26"]["BackgroundColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["26"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["26"]["Size"] = UDim2.new(0, 25, 0, 29);
+G2L["26"]["Name"] = [[Row3M7]];
+G2L["26"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["26"]["Text"] = [[⚪]];
+G2L["26"]["Position"] = UDim2.new(0.594, 0, 0.28293, 0);
+
+
+-- StarterGui.Message Chatter.Frame.MessageFrame.Row3M8
+G2L["27"] = Instance.new("TextButton", G2L["9"]);
+G2L["27"]["TextWrapped"] = true;
+G2L["27"]["BorderSizePixel"] = 0;
+G2L["27"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["27"]["TextSize"] = 14;
+G2L["27"]["TextScaled"] = true;
+G2L["27"]["BackgroundColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["27"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["27"]["Size"] = UDim2.new(0, 25, 0, 29);
+G2L["27"]["Name"] = [[Row3M8]];
+G2L["27"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["27"]["Text"] = [[⚪]];
+G2L["27"]["Position"] = UDim2.new(0.693, 0, 0.28293, 0);
+
+
+-- StarterGui.Message Chatter.Frame.MessageFrame.Row3M9
+G2L["28"] = Instance.new("TextButton", G2L["9"]);
+G2L["28"]["TextWrapped"] = true;
+G2L["28"]["BorderSizePixel"] = 0;
+G2L["28"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["28"]["TextSize"] = 14;
+G2L["28"]["TextScaled"] = true;
+G2L["28"]["BackgroundColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["28"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["28"]["Size"] = UDim2.new(0, 25, 0, 29);
+G2L["28"]["Name"] = [[Row3M9]];
+G2L["28"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["28"]["Text"] = [[⚪]];
+G2L["28"]["Position"] = UDim2.new(0.792, 0, 0.28293, 0);
+
+
+-- StarterGui.Message Chatter.Frame.MessageFrame.Row4M2
+G2L["29"] = Instance.new("TextButton", G2L["9"]);
+G2L["29"]["TextWrapped"] = true;
+G2L["29"]["BorderSizePixel"] = 0;
+G2L["29"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["29"]["TextSize"] = 14;
+G2L["29"]["TextScaled"] = true;
+G2L["29"]["BackgroundColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["29"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["29"]["Size"] = UDim2.new(0, 25, 0, 29);
+G2L["29"]["Name"] = [[Row4M2]];
+G2L["29"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["29"]["Text"] = [[⚪]];
+G2L["29"]["Position"] = UDim2.new(0.09924, 0, 0.42439, 0);
+
+
+-- StarterGui.Message Chatter.Frame.MessageFrame.Row4M10
+G2L["2a"] = Instance.new("TextButton", G2L["9"]);
+G2L["2a"]["TextWrapped"] = true;
+G2L["2a"]["BorderSizePixel"] = 0;
+G2L["2a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2a"]["TextSize"] = 14;
+G2L["2a"]["TextScaled"] = true;
+G2L["2a"]["BackgroundColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["2a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2a"]["Size"] = UDim2.new(0, 25, 0, 29);
+G2L["2a"]["Name"] = [[Row4M10]];
+G2L["2a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2a"]["Text"] = [[⚪]];
+G2L["2a"]["Position"] = UDim2.new(0.892, 0, 0.42439, 0);
+
+
+-- StarterGui.Message Chatter.Frame.MessageFrame.Row4M1
+G2L["2b"] = Instance.new("TextButton", G2L["9"]);
+G2L["2b"]["TextWrapped"] = true;
+G2L["2b"]["BorderSizePixel"] = 0;
+G2L["2b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2b"]["TextSize"] = 14;
+G2L["2b"]["TextScaled"] = true;
+G2L["2b"]["BackgroundColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["2b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2b"]["Size"] = UDim2.new(0, 25, 0, 29);
+G2L["2b"]["Name"] = [[Row4M1]];
+G2L["2b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2b"]["Text"] = [[⚪]];
+G2L["2b"]["Position"] = UDim2.new(0, 0, 0.42439, 0);
+
+
+-- StarterGui.Message Chatter.Frame.MessageFrame.Row4M4
+G2L["2c"] = Instance.new("TextButton", G2L["9"]);
+G2L["2c"]["TextWrapped"] = true;
+G2L["2c"]["BorderSizePixel"] = 0;
+G2L["2c"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2c"]["TextSize"] = 14;
+G2L["2c"]["TextScaled"] = true;
+G2L["2c"]["BackgroundColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["2c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2c"]["Size"] = UDim2.new(0, 25, 0, 29);
+G2L["2c"]["Name"] = [[Row4M4]];
+G2L["2c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2c"]["Text"] = [[⚪]];
+G2L["2c"]["Position"] = UDim2.new(0.297, 0, 0.42439, 0);
+
+
+-- StarterGui.Message Chatter.Frame.MessageFrame.Row4M3
+G2L["2d"] = Instance.new("TextButton", G2L["9"]);
+G2L["2d"]["TextWrapped"] = true;
+G2L["2d"]["BorderSizePixel"] = 0;
+G2L["2d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2d"]["TextSize"] = 14;
+G2L["2d"]["TextScaled"] = true;
+G2L["2d"]["BackgroundColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["2d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2d"]["Size"] = UDim2.new(0, 25, 0, 29);
+G2L["2d"]["Name"] = [[Row4M3]];
+G2L["2d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2d"]["Text"] = [[⚪]];
+G2L["2d"]["Position"] = UDim2.new(0.198, 0, 0.42439, 0);
+
+
+-- StarterGui.Message Chatter.Frame.MessageFrame.Row4M6
+G2L["2e"] = Instance.new("TextButton", G2L["9"]);
+G2L["2e"]["TextWrapped"] = true;
+G2L["2e"]["BorderSizePixel"] = 0;
+G2L["2e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e"]["TextSize"] = 14;
+G2L["2e"]["TextScaled"] = true;
+G2L["2e"]["BackgroundColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["2e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2e"]["Size"] = UDim2.new(0, 25, 0, 29);
+G2L["2e"]["Name"] = [[Row4M6]];
+G2L["2e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e"]["Text"] = [[⚪]];
+G2L["2e"]["Position"] = UDim2.new(0.495, 0, 0.42439, 0);
+
+
+-- StarterGui.Message Chatter.Frame.MessageFrame.Row4M5
+G2L["2f"] = Instance.new("TextButton", G2L["9"]);
+G2L["2f"]["TextWrapped"] = true;
+G2L["2f"]["BorderSizePixel"] = 0;
+G2L["2f"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2f"]["TextSize"] = 14;
+G2L["2f"]["TextScaled"] = true;
+G2L["2f"]["BackgroundColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["2f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2f"]["Size"] = UDim2.new(0, 25, 0, 29);
+G2L["2f"]["Name"] = [[Row4M5]];
+G2L["2f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2f"]["Text"] = [[⚪]];
+G2L["2f"]["Position"] = UDim2.new(0.396, 0, 0.42439, 0);
+
+
+-- StarterGui.Message Chatter.Frame.MessageFrame.Row4M7
+G2L["30"] = Instance.new("TextButton", G2L["9"]);
+G2L["30"]["TextWrapped"] = true;
+G2L["30"]["BorderSizePixel"] = 0;
+G2L["30"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["30"]["TextSize"] = 14;
+G2L["30"]["TextScaled"] = true;
+G2L["30"]["BackgroundColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["30"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["30"]["Size"] = UDim2.new(0, 25, 0, 29);
+G2L["30"]["Name"] = [[Row4M7]];
+G2L["30"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["30"]["Text"] = [[⚪]];
+G2L["30"]["Position"] = UDim2.new(0.594, 0, 0.42439, 0);
+
+
+-- StarterGui.Message Chatter.Frame.MessageFrame.Row4M8
+G2L["31"] = Instance.new("TextButton", G2L["9"]);
+G2L["31"]["TextWrapped"] = true;
+G2L["31"]["BorderSizePixel"] = 0;
+G2L["31"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["31"]["TextSize"] = 14;
+G2L["31"]["TextScaled"] = true;
+G2L["31"]["BackgroundColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["31"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["31"]["Size"] = UDim2.new(0, 25, 0, 29);
+G2L["31"]["Name"] = [[Row4M8]];
+G2L["31"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["31"]["Text"] = [[⚪]];
+G2L["31"]["Position"] = UDim2.new(0.693, 0, 0.42439, 0);
+
+
+-- StarterGui.Message Chatter.Frame.MessageFrame.Row4M9
+G2L["32"] = Instance.new("TextButton", G2L["9"]);
+G2L["32"]["TextWrapped"] = true;
+G2L["32"]["BorderSizePixel"] = 0;
+G2L["32"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["32"]["TextSize"] = 14;
+G2L["32"]["TextScaled"] = true;
+G2L["32"]["BackgroundColor3"] = Color3.fromRGB(151, 151, 151);
+G2L["32"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["32"]["Size"] = UDim2.new(0, 25, 0, 29);
+G2L["32"]["Name"] = [[Row4M9]];
+G2L["32"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["32"]["Text"] = [[⚪]];
+G2L["32"]["Position"] = UDim2.new(0.792, 0, 0.42439, 0);
+
+
+-- StarterGui.Message Chatter.Frame.Chat
+G2L["33"] = Instance.new("LocalScript", G2L["2"]);
+G2L["33"]["Name"] = [[Chat]];
+
+
+-- StarterGui.Message Chatter.Frame.TextButton
+G2L["34"] = Instance.new("TextButton", G2L["2"]);
+G2L["34"]["TextWrapped"] = true;
+G2L["34"]["BorderSizePixel"] = 0;
+G2L["34"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["34"]["TextSize"] = 14;
+G2L["34"]["TextScaled"] = true;
+G2L["34"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["34"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["34"]["Size"] = UDim2.new(0, 241, 0, 32);
+G2L["34"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["34"]["Text"] = [[Chat The Picture]];
+G2L["34"]["Position"] = UDim2.new(0.09428, 0, 0.8796, 0);
+
+
+-- StarterGui.Message Chatter.Frame.TextButton.UIGradient
+G2L["35"] = Instance.new("UIGradient", G2L["34"]);
+G2L["35"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(119, 119, 119)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(107, 107, 107))};
+
+
+-- StarterGui.Message Chatter.Frame.TextButton.UICorner
+G2L["36"] = Instance.new("UICorner", G2L["34"]);
+
+
+
+-- StarterGui.Message Chatter.Frame.ChatRow2
+G2L["37"] = Instance.new("LocalScript", G2L["2"]);
+G2L["37"]["Name"] = [[ChatRow2]];
+
+
+-- StarterGui.Message Chatter.Frame.ChatRow3
+G2L["38"] = Instance.new("LocalScript", G2L["2"]);
+G2L["38"]["Name"] = [[ChatRow3]];
+
+
+-- StarterGui.Message Chatter.Frame.ChatRow4
+G2L["39"] = Instance.new("LocalScript", G2L["2"]);
+G2L["39"]["Name"] = [[ChatRow4]];
+
+
+-- StarterGui.Message Chatter.Frame.LocalScript
+local function C_6()
+local script = G2L["6"];
+	-- Made by Real_IceyDev (@lceyDex) --
+	-- Simple UI dragger (PC Only/Any device that has a mouse) --
+	
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end;
+task.spawn(C_6);
+-- StarterGui.Message Chatter.Frame.Chat
+local function C_33()
+local script = G2L["33"];
+	local thing1 = "⚪"
+	local thing2 = "⚪"
+	local thing3 = "⚪"
+	local thing4 = "⚪"
+	local thing5 = "⚪"
+	local thing6 = "⚪"
+	local thing7 = "⚪"
+	local thing8 = "⚪"
+	local thing9 = "⚪"
+	local thing10 = "⚪"
+	local plr = game.Players.LocalPlayer
+	script.Parent.TextButton.Activated:Connect(function()
+		function Chat(msg)
+			if game.ReplicatedStorage:FindFirstChild('DefaultChatSystemChatEvents') then
+				game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg, "All")
+			else
+				game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync(msg)
+			end
+		end
+		wait(0.1)
+		Chat(thing1.. thing2.. thing3.. thing4.. thing5.. thing6.. thing7.. thing8.. thing9..thing10)
+	end)
+	local rn = "white"
+	script.Parent.MessageFrame.M1.Activated:Connect(function()
+		if rn == "white" then
+			rn = "black"
+			script.Parent.MessageFrame.M1.Text = "⚫"
+			thing1 = "⚫"
+		elseif rn == "black" then
+			rn = "white"
+			script.Parent.MessageFrame.M1.Text = "⚪"
+			thing1 = "⚪"
+		end
+	end)
+	local rn1 = "white"
+	script.Parent.MessageFrame.M2.Activated:Connect(function()
+		if rn1 == "white" then
+			rn1 = "black"
+			script.Parent.MessageFrame.M2.Text = "⚫"
+			thing2 = "⚫"
+		elseif rn1 == "black" then
+			rn1 = "white"
+			script.Parent.MessageFrame.M2.Text = "⚪"
+			thing2 = "⚪"
+		end
+	end)
+	local rn2 = "white"
+	script.Parent.MessageFrame.M3.Activated:Connect(function()
+		if rn2 == "white" then
+			rn2 = "black"
+			script.Parent.MessageFrame.M3.Text = "⚫"
+			thing3 = "⚫"
+		elseif rn2 == "black" then
+			rn2 = "white"
+			script.Parent.MessageFrame.M3.Text = "⚪"
+			thing3 = "⚪"
+		end
+	end)
+	local rn3 = "white"
+	script.Parent.MessageFrame.M4.Activated:Connect(function()
+		if rn3 == "white" then
+			rn3 = "black"
+			script.Parent.MessageFrame.M4.Text = "⚫"
+			thing4 = "⚫"
+		elseif rn3 == "black" then
+			rn3 = "white"
+			script.Parent.MessageFrame.M4.Text = "⚪"
+			thing4 = "⚪"
+		end
+	end)
+	local rn4 = "white"
+	script.Parent.MessageFrame.M5.Activated:Connect(function()
+		if rn4 == "white" then
+			rn4 = "black"
+			script.Parent.MessageFrame.M5.Text = "⚫"
+			thing5 = "⚫"
+		elseif rn4 == "black" then
+			rn4 = "white"
+			script.Parent.MessageFrame.M5.Text = "⚪"
+			thing5 = "⚪"
+		end
+	end)
+	local rn5 = "white"
+	script.Parent.MessageFrame.M6.Activated:Connect(function()
+		if rn5 == "white" then
+			rn5 = "black"
+			script.Parent.MessageFrame.M6.Text = "⚫"
+			thing6 = "⚫"
+		elseif rn5 == "black" then
+			rn5 = "white"
+			script.Parent.MessageFrame.M6.Text = "⚪"
+			thing6 = "⚪"
+		end
+	end)
+	local rn6 = "white"
+	script.Parent.MessageFrame.M7.Activated:Connect(function()
+		if rn6 == "white" then
+			rn6 = "black"
+			script.Parent.MessageFrame.M7.Text = "⚫"
+			thing7 = "⚫"
+		elseif rn6 == "black" then
+			rn6 = "white"
+			script.Parent.MessageFrame.M7.Text = "⚪"
+			thing7 = "⚪"
+		end
+	end)
+	local rn7 = "white"
+	script.Parent.MessageFrame.M8.Activated:Connect(function()
+		if rn7 == "white" then
+			rn7 = "black"
+			script.Parent.MessageFrame.M8.Text = "⚫"
+			thing8 = "⚫"
+		elseif rn7 == "black" then
+			rn7 = "white"
+			script.Parent.MessageFrame.M8.Text = "⚪"
+			thing8 = "⚪"
+		end
+	end)
+	local rn8 = "white"
+	script.Parent.MessageFrame.M9.Activated:Connect(function()
+		if rn8 == "white" then
+			rn8 = "black"
+			script.Parent.MessageFrame.M9.Text = "⚫"
+			thing9 = "⚫"
+		elseif rn8 == "black" then
+			rn8 = "white"
+			script.Parent.MessageFrame.M9.Text = "⚪"
+			thing9 = "⚪"
+		end
+	end)
+	local rn9 = "white"
+	script.Parent.MessageFrame.M10.Activated:Connect(function()
+		if rn9 == "white" then
+			rn9 = "black"
+			script.Parent.MessageFrame.M10.Text = "⚫"
+			thing10 = "⚫"
+		elseif rn9 == "black" then
+			rn9 = "white"
+			script.Parent.MessageFrame.M10.Text = "⚪"
+			thing10 = "⚪"
+		end
+	end)
+end;
+task.spawn(C_33);
+-- StarterGui.Message Chatter.Frame.ChatRow2
+local function C_37()
+local script = G2L["37"];
+	local thing1 = "⚪"
+	local thing2 = "⚪"
+	local thing3 = "⚪"
+	local thing4 = "⚪"
+	local thing5 = "⚪"
+	local thing6 = "⚪"
+	local thing7 = "⚪"
+	local thing8 = "⚪"
+	local thing9 = "⚪"
+	local thing10 = "⚪"
+	local plr = game.Players.LocalPlayer
+	script.Parent.TextButton.Activated:Connect(function()
+		function Chat(msg)
+			if game.ReplicatedStorage:FindFirstChild('DefaultChatSystemChatEvents') then
+				game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg, "All")
+			else
+				game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync(msg)
+			end
+		end
+		wait(0.2)
+		Chat(thing1.. thing2.. thing3.. thing4.. thing5.. thing6.. thing7.. thing8.. thing9..thing10)
+	end)
+	local rn = "white"
+	script.Parent.MessageFrame.Row2M1.Activated:Connect(function()
+		if rn == "white" then
+			rn = "black"
+			script.Parent.MessageFrame.Row2M1.Text = "⚫"
+			thing1 = "⚫"
+		elseif rn == "black" then
+			rn = "white"
+			script.Parent.MessageFrame.Row2M1.Text = "⚪"
+			thing1 = "⚪"
+		end
+	end)
+	local rn1 = "white"
+	script.Parent.MessageFrame.Row2M2.Activated:Connect(function()
+		if rn1 == "white" then
+			rn1 = "black"
+			script.Parent.MessageFrame.Row2M2.Text = "⚫"
+			thing2 = "⚫"
+		elseif rn1 == "black" then
+			rn1 = "white"
+			script.Parent.MessageFrame.Row2M2.Text = "⚪"
+			thing2 = "⚪"
+		end
+	end)
+	local rn2 = "white"
+	script.Parent.MessageFrame.Row2M3.Activated:Connect(function()
+		if rn2 == "white" then
+			rn2 = "black"
+			script.Parent.MessageFrame.Row2M3.Text = "⚫"
+			thing3 = "⚫"
+		elseif rn2 == "black" then
+			rn2 = "white"
+			script.Parent.MessageFrame.Row2M3.Text = "⚪"
+			thing3 = "⚪"
+		end
+	end)
+	local rn3 = "white"
+	script.Parent.MessageFrame.Row2M4.Activated:Connect(function()
+		if rn3 == "white" then
+			rn3 = "black"
+			script.Parent.MessageFrame.Row2M4.Text = "⚫"
+			thing4 = "⚫"
+		elseif rn3 == "black" then
+			rn3 = "white"
+			script.Parent.MessageFrame.Row2M4.Text = "⚪"
+			thing4 = "⚪"
+		end
+	end)
+	local rn4 = "white"
+	script.Parent.MessageFrame.Row2M5.Activated:Connect(function()
+		if rn4 == "white" then
+			rn4 = "black"
+			script.Parent.MessageFrame.Row2M5.Text = "⚫"
+			thing5 = "⚫"
+		elseif rn4 == "black" then
+			rn4 = "white"
+			script.Parent.MessageFrame.Row2M5.Text = "⚪"
+			thing5 = "⚪"
+		end
+	end)
+	local rn5 = "white"
+	script.Parent.MessageFrame.Row2M6.Activated:Connect(function()
+		if rn5 == "white" then
+			rn5 = "black"
+			script.Parent.MessageFrame.Row2M6.Text = "⚫"
+			thing6 = "⚫"
+		elseif rn5 == "black" then
+			rn5 = "white"
+			script.Parent.MessageFrame.Row2M6.Text = "⚪"
+			thing6 = "⚪"
+		end
+	end)
+	local rn6 = "white"
+	script.Parent.MessageFrame.Row2M7.Activated:Connect(function()
+		if rn6 == "white" then
+			rn6 = "black"
+			script.Parent.MessageFrame.Row2M7.Text = "⚫"
+			thing7 = "⚫"
+		elseif rn6 == "black" then
+			rn6 = "white"
+			script.Parent.MessageFrame.Row2M7.Text = "⚪"
+			thing7 = "⚪"
+		end
+	end)
+	local rn7 = "white"
+	script.Parent.MessageFrame.Row2M8.Activated:Connect(function()
+		if rn7 == "white" then
+			rn7 = "black"
+			script.Parent.MessageFrame.Row2M8.Text = "⚫"
+			thing8 = "⚫"
+		elseif rn7 == "black" then
+			rn7 = "white"
+			script.Parent.MessageFrame.Row2M8.Text = "⚪"
+			thing8 = "⚪"
+		end
+	end)
+	local rn8 = "white"
+	script.Parent.MessageFrame.Row2M9.Activated:Connect(function()
+		if rn8 == "white" then
+			rn8 = "black"
+			script.Parent.MessageFrame.Row2M9.Text = "⚫"
+			thing9 = "⚫"
+		elseif rn8 == "black" then
+			rn8 = "white"
+			script.Parent.MessageFrame.Row2M9.Text = "⚪"
+			thing9 = "⚪"
+		end
+	end)
+	local rn9 = "white"
+	script.Parent.MessageFrame.Row2M10.Activated:Connect(function()
+		if rn9 == "white" then
+			rn9 = "black"
+			script.Parent.MessageFrame.Row2M10.Text = "⚫"
+			thing10 = "⚫"
+		elseif rn9 == "black" then
+			rn9 = "white"
+			script.Parent.MessageFrame.Row2M10.Text = "⚪"
+			thing10 = "⚪"
+		end
+	end)
+end;
+task.spawn(C_37);
+-- StarterGui.Message Chatter.Frame.ChatRow3
+local function C_38()
+local script = G2L["38"];
+	local thing1 = "⚪"
+	local thing2 = "⚪"
+	local thing3 = "⚪"
+	local thing4 = "⚪"
+	local thing5 = "⚪"
+	local thing6 = "⚪"
+	local thing7 = "⚪"
+	local thing8 = "⚪"
+	local thing9 = "⚪"
+	local thing10 = "⚪"
+	local plr = game.Players.LocalPlayer
+	script.Parent.TextButton.Activated:Connect(function()
+		function Chat(msg)
+			if game.ReplicatedStorage:FindFirstChild('DefaultChatSystemChatEvents') then
+				game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg, "All")
+			else
+				game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync(msg)
+			end
+		end
+		wait(0.3)
+		Chat(thing1.. thing2.. thing3.. thing4.. thing5.. thing6.. thing7.. thing8.. thing9..thing10)
+	end)
+	local rn = "white"
+	script.Parent.MessageFrame.Row3M1.Activated:Connect(function()
+		if rn == "white" then
+			rn = "black"
+			script.Parent.MessageFrame.Row3M1.Text = "⚫"
+			thing1 = "⚫"
+		elseif rn == "black" then
+			rn = "white"
+			script.Parent.MessageFrame.Row3M1.Text = "⚪"
+			thing1 = "⚪"
+		end
+	end)
+	local rn1 = "white"
+	script.Parent.MessageFrame.Row3M2.Activated:Connect(function()
+		if rn1 == "white" then
+			rn1 = "black"
+			script.Parent.MessageFrame.Row3M2.Text = "⚫"
+			thing2 = "⚫"
+		elseif rn1 == "black" then
+			rn1 = "white"
+			script.Parent.MessageFrame.Row3M2.Text = "⚪"
+			thing2 = "⚪"
+		end
+	end)
+	local rn2 = "white"
+	script.Parent.MessageFrame.Row3M3.Activated:Connect(function()
+		if rn2 == "white" then
+			rn2 = "black"
+			script.Parent.MessageFrame.Row3M3.Text = "⚫"
+			thing3 = "⚫"
+		elseif rn2 == "black" then
+			rn2 = "white"
+			script.Parent.MessageFrame.Row3M3.Text = "⚪"
+			thing3 = "⚪"
+		end
+	end)
+	local rn3 = "white"
+	script.Parent.MessageFrame.Row3M4.Activated:Connect(function()
+		if rn3 == "white" then
+			rn3 = "black"
+			script.Parent.MessageFrame.Row3M4.Text = "⚫"
+			thing4 = "⚫"
+		elseif rn3 == "black" then
+			rn3 = "white"
+			script.Parent.MessageFrame.Row3M4.Text = "⚪"
+			thing4 = "⚪"
+		end
+	end)
+	local rn4 = "white"
+	script.Parent.MessageFrame.Row3M5.Activated:Connect(function()
+		if rn4 == "white" then
+			rn4 = "black"
+			script.Parent.MessageFrame.Row3M5.Text = "⚫"
+			thing5 = "⚫"
+		elseif rn4 == "black" then
+			rn4 = "white"
+			script.Parent.MessageFrame.Row3M5.Text = "⚪"
+			thing5 = "⚪"
+		end
+	end)
+	local rn5 = "white"
+	script.Parent.MessageFrame.Row3M6.Activated:Connect(function()
+		if rn5 == "white" then
+			rn5 = "black"
+			script.Parent.MessageFrame.Row3M6.Text = "⚫"
+			thing6 = "⚫"
+		elseif rn5 == "black" then
+			rn5 = "white"
+			script.Parent.MessageFrame.Row3M6.Text = "⚪"
+			thing6 = "⚪"
+		end
+	end)
+	local rn6 = "white"
+	script.Parent.MessageFrame.Row3M7.Activated:Connect(function()
+		if rn6 == "white" then
+			rn6 = "black"
+			script.Parent.MessageFrame.Row3M7.Text = "⚫"
+			thing7 = "⚫"
+		elseif rn6 == "black" then
+			rn6 = "white"
+			script.Parent.MessageFrame.Row3M7.Text = "⚪"
+			thing7 = "⚪"
+		end
+	end)
+	local rn7 = "white"
+	script.Parent.MessageFrame.Row3M8.Activated:Connect(function()
+		if rn7 == "white" then
+			rn7 = "black"
+			script.Parent.MessageFrame.Row3M8.Text = "⚫"
+			thing8 = "⚫"
+		elseif rn7 == "black" then
+			rn7 = "white"
+			script.Parent.MessageFrame.Row3M8.Text = "⚪"
+			thing8 = "⚪"
+		end
+	end)
+	local rn8 = "white"
+	script.Parent.MessageFrame.Row3M9.Activated:Connect(function()
+		if rn8 == "white" then
+			rn8 = "black"
+			script.Parent.MessageFrame.Row3M9.Text = "⚫"
+			thing9 = "⚫"
+		elseif rn8 == "black" then
+			rn8 = "white"
+			script.Parent.MessageFrame.Row3M9.Text = "⚪"
+			thing9 = "⚪"
+		end
+	end)
+	local rn9 = "white"
+	script.Parent.MessageFrame.Row3M10.Activated:Connect(function()
+		if rn9 == "white" then
+			rn9 = "black"
+			script.Parent.MessageFrame.Row3M10.Text = "⚫"
+			thing10 = "⚫"
+		elseif rn9 == "black" then
+			rn9 = "white"
+			script.Parent.MessageFrame.Row3M10.Text = "⚪"
+			thing10 = "⚪"
+		end
+	end)
+end;
+task.spawn(C_38);
+-- StarterGui.Message Chatter.Frame.ChatRow4
+local function C_39()
+local script = G2L["39"];
+	local thing1 = "⚪"
+	local thing2 = "⚪"
+	local thing3 = "⚪"
+	local thing4 = "⚪"
+	local thing5 = "⚪"
+	local thing6 = "⚪"
+	local thing7 = "⚪"
+	local thing8 = "⚪"
+	local thing9 = "⚪"
+	local thing10 = "⚪"
+	local plr = game.Players.LocalPlayer
+	script.Parent.TextButton.Activated:Connect(function()
+		function Chat(msg)
+			if game.ReplicatedStorage:FindFirstChild('DefaultChatSystemChatEvents') then
+				game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg, "All")
+			else
+				game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync(msg)
+			end
+		end
+		wait(0.4)
+		Chat(thing1.. thing2.. thing3.. thing4.. thing5.. thing6.. thing7.. thing8.. thing9..thing10)
+	end)
+	local rn = "white"
+	script.Parent.MessageFrame.Row4M1.Activated:Connect(function()
+		if rn == "white" then
+			rn = "black"
+			script.Parent.MessageFrame.Row4M1.Text = "⚫"
+			thing1 = "⚫"
+		elseif rn == "black" then
+			rn = "white"
+			script.Parent.MessageFrame.Row4M1.Text = "⚪"
+			thing1 = "⚪"
+		end
+	end)
+	local rn1 = "white"
+	script.Parent.MessageFrame.Row4M2.Activated:Connect(function()
+		if rn1 == "white" then
+			rn1 = "black"
+			script.Parent.MessageFrame.Row4M2.Text = "⚫"
+			thing2 = "⚫"
+		elseif rn1 == "black" then
+			rn1 = "white"
+			script.Parent.MessageFrame.Row4M2.Text = "⚪"
+			thing2 = "⚪"
+		end
+	end)
+	local rn2 = "white"
+	script.Parent.MessageFrame.Row4M3.Activated:Connect(function()
+		if rn2 == "white" then
+			rn2 = "black"
+			script.Parent.MessageFrame.Row4M3.Text = "⚫"
+			thing3 = "⚫"
+		elseif rn2 == "black" then
+			rn2 = "white"
+			script.Parent.MessageFrame.Row4M3.Text = "⚪"
+			thing3 = "⚪"
+		end
+	end)
+	local rn3 = "white"
+	script.Parent.MessageFrame.Row4M4.Activated:Connect(function()
+		if rn3 == "white" then
+			rn3 = "black"
+			script.Parent.MessageFrame.Row4M4.Text = "⚫"
+			thing4 = "⚫"
+		elseif rn3 == "black" then
+			rn3 = "white"
+			script.Parent.MessageFrame.Row4M4.Text = "⚪"
+			thing4 = "⚪"
+		end
+	end)
+	local rn4 = "white"
+	script.Parent.MessageFrame.Row4M5.Activated:Connect(function()
+		if rn4 == "white" then
+			rn4 = "black"
+			script.Parent.MessageFrame.Row4M5.Text = "⚫"
+			thing5 = "⚫"
+		elseif rn4 == "black" then
+			rn4 = "white"
+			script.Parent.MessageFrame.Row4M5.Text = "⚪"
+			thing5 = "⚪"
+		end
+	end)
+	local rn5 = "white"
+	script.Parent.MessageFrame.Row4M6.Activated:Connect(function()
+		if rn5 == "white" then
+			rn5 = "black"
+			script.Parent.MessageFrame.Row4M6.Text = "⚫"
+			thing6 = "⚫"
+		elseif rn5 == "black" then
+			rn5 = "white"
+			script.Parent.MessageFrame.Row4M6.Text = "⚪"
+			thing6 = "⚪"
+		end
+	end)
+	local rn6 = "white"
+	script.Parent.MessageFrame.Row4M7.Activated:Connect(function()
+		if rn6 == "white" then
+			rn6 = "black"
+			script.Parent.MessageFrame.Row4M7.Text = "⚫"
+			thing7 = "⚫"
+		elseif rn6 == "black" then
+			rn6 = "white"
+			script.Parent.MessageFrame.Row4M7.Text = "⚪"
+			thing7 = "⚪"
+		end
+	end)
+	local rn7 = "white"
+	script.Parent.MessageFrame.Row4M8.Activated:Connect(function()
+		if rn7 == "white" then
+			rn7 = "black"
+			script.Parent.MessageFrame.Row4M8.Text = "⚫"
+			thing8 = "⚫"
+		elseif rn7 == "black" then
+			rn7 = "white"
+			script.Parent.MessageFrame.Row4M8.Text = "⚪"
+			thing8 = "⚪"
+		end
+	end)
+	local rn8 = "white"
+	script.Parent.MessageFrame.Row4M9.Activated:Connect(function()
+		if rn8 == "white" then
+			rn8 = "black"
+			script.Parent.MessageFrame.Row4M9.Text = "⚫"
+			thing9 = "⚫"
+		elseif rn8 == "black" then
+			rn8 = "white"
+			script.Parent.MessageFrame.Row4M9.Text = "⚪"
+			thing9 = "⚪"
+		end
+	end)
+	local rn9 = "white"
+	script.Parent.MessageFrame.Row4M10.Activated:Connect(function()
+		if rn9 == "white" then
+			rn9 = "black"
+			script.Parent.MessageFrame.Row4M10.Text = "⚫"
+			thing10 = "⚫"
+		elseif rn9 == "black" then
+			rn9 = "white"
+			script.Parent.MessageFrame.Row4M10.Text = "⚪"
+			thing10 = "⚪"
+		end
+	end)
+end;
+task.spawn(C_39);
+
+return G2L["1"], require;
